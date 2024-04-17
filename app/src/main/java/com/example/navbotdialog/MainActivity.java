@@ -402,6 +402,7 @@ public class MainActivity extends AppCompatActivity  implements SearchFragment.O
             Intent intent = new Intent(MainActivity.this, MainActivity.class);
             intent.putExtra("mat", "");
             startActivity(intent);
+            finish();
         }
     }
 
