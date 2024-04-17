@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:title="NAME: GHERBI Fatima"/>
+
+        <item
+            android:title="MAT: 191931063085"/>
+
+        <item
+            android:title="EMAIL: maissagherbi77@gmail.com"/>
+
+        <item
+            android:title="group: 01" />
+    </group>
+    <item android:title=""></item>
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:title="NAME: AITSAID Youcef Islem"/>
+
+        <item
+            android:title="MAT: 192031055826"/>
+
+        <item
+            android:title="EMAIL: youcefaitsaid598@.com"/>
+
+        <item
+            android:title="group: 02"/>
+    </group>
+    <item
+        android:title="">
+
+        <menu>
+            <item android:title=""/>
+        </menu>
+
+    </item>
+
+</menu>
