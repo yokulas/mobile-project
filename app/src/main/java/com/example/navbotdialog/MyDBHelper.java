@@ -114,18 +114,22 @@ public class MyDBHelper extends SQLiteOpenHelper {
         if (address.isEmpty())
             return "missing address";
 
-        String job = employee.getJob();
-        if (job.isEmpty())
-            return "missing job";
+        String email = employee.getEmail();
+        if (email.isEmpty() ||
+                !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches())
+            return "missing or invalid email";
 
         String num = employee.getNumberPhone();
         if (num.isEmpty())
             return "missing numberPhone";
 
-        String email = employee.getEmail();
-        if (email.isEmpty() ||
-                !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches())
-            return "missing or invalid email";
+        String job = employee.getJob();
+        if (job.isEmpty())
+            return "missing job";
+
+        String dateOfBirth = employee.getDateOfBirth();
+        if (dateOfBirth.isEmpty())
+            return "missing dateOfBirth";
 
         int rowsAffected = -1;
         try {
@@ -135,9 +139,10 @@ public class MyDBHelper extends SQLiteOpenHelper {
         values.put("firstname", firstname);
         values.put("lastname", lastname);
         values.put("address", address);
-        values.put("job", job);
-        values.put("numberPhone", num);
         values.put("email", email);
+        values.put("numberPhone", num);
+        values.put("job", job);
+        values.put("dateOfBirth", dateOfBirth);
         values.put("image", employee.getImage());
         rowsAffected = db.update("employees", values, "id = ?", new String[]{String.valueOf(getEmployeeId(matricule))});
         db.close();
