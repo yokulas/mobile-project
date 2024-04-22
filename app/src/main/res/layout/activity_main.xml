@@ -39,7 +39,7 @@
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_menu"
         app:itemIconTint="@color/vertApp"
-        app:itemTextColor="@color/purple_700"/>
+        app:itemTextColor="@color/vert"/>
 
 
 
