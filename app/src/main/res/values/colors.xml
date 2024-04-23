@@ -13,4 +13,6 @@
     <color name="vert_olive">#86E04A</color>
     <color name="vert">#539156</color>
     <color name="vertApp">#92E3A9</color>
+    <color name="gray">#aaa</color>
+    <color name="darkgray">#ff424250</color>
 </resources>
